@@ -262,6 +262,12 @@ background-position: center;
   }
 }
 
+@media screen and (max-width: 1158px){
+  .dark-bg {
+    padding: 112px 0;
+  }
+}
+
 .darc-bg-txt {
 color:  #FFF;
 font-size: 56px;
@@ -773,7 +779,6 @@ margin-right: 80px;
 @media screen and (max-width: 768px){
   .social-media{
     margin: 0;
-   
   }
 }
 
@@ -815,6 +820,7 @@ margin-right: 80px;
   align-items: center;
   text-align: center;
   gap: 72px;
+  width: 320px;
 }
 }
 
@@ -822,6 +828,7 @@ margin-right: 80px;
 .footer-container {
   flex-wrap: wrap;
   margin-left: 108px;
+width: 768px;
   
 }
 }
@@ -880,6 +887,7 @@ height: 4px;
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .nav-text.curent{
   color: #404BBF;
   position: relative;
@@ -965,6 +973,8 @@ background-color: rgba(46, 47, 66, 0.4);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .form-container{
   position: absolute;
   top: 50%;
@@ -977,6 +987,13 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
   border-radius: 4px; 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
+}
+
+
+@media screen and (max-width: 320px) {
+.form-container{
+  width: 288px;
+}
 }
 
 .content-close{
@@ -1163,18 +1180,21 @@ border-radius: 4px;
 
 
 .container-mobile-menu{
-  position: relative;
-  height: 100%;
- 
+   position: fixed;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+background-color: #FFF;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ width: 320px;
 }
 
 .mobile-navigation{
-  
-  min-height: 640px;
-  display: flex;
-  padding: 72px 40px 16px;
+  padding: 72px 16px 40px;
+     display: flex;
   flex-direction: column;
- 
+  position: absolute;
   
 }
 
@@ -1183,6 +1203,7 @@ border-radius: 4px;
     display: none;
   }
 }
+
 
 .button-close {
 position: absolute;
@@ -1199,14 +1220,9 @@ position: absolute;
   padding: 0; 
   top: 24px;
   right: 24px;
- 
-  
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-navigation{
-  display: flex;
-  flex-direction: column;
-}
 
 .mobile-menu {
   display: inline-flex;
@@ -1251,10 +1267,32 @@ gap: 40px;
 
 .mobile-navigation-link:hover,
 .mobile-navigation-linkt:focus{
-  color: #404bbf;
+  color: #404BBF;
+}
+
+.mobile-navigation-link.current{
+   color: #404BBF;
+}
+
+.mobile-contacts-list.current{
+color: #4D5AE5;
 }
 
 .mobile-contacts-list:hover,
 .mobile-contacts-list:focus{
-  color: #404bbf;
+  color: #4D5AE5;
 }
+
+.button-close:hover, .button-close:focus{
+  background-color: #404bbf;
+  border: none; 
+}
+
+.button-close:hover .mobile-navigation-icon, .button-close:focus .mobile-navigation-icon {
+  fill: #ffffff;
+ }
+
+ .mobile-navigation-icon{
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
