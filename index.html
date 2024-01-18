@@ -115,8 +115,14 @@
         <h2 class="team">Our Team</h2>
          <ul class="team-list">
               <li class="team-foto">
-                  <img src="./images/mb.jpg" width="264" height="260" alt="man with a beard"
-                  srcset="./images/mb@2x-min.jpg">
+                  <div>
+                    <picture>
+                      <source srcset="./images/mb-m-min.jpg 1x, ./images/mb-m@2x-min.jpg 2x" media="(max-width:768px)">
+                      <source srcset="./images/mb-t-min.jpg 1x, ./images/mb-t@2x-min.jpg 2x" media="(max-width:1158px)">
+                      <img src="./images/mb.jpg" width="264" height="260" alt="man with a beard"
+                      srcset="./images/mb@2x-min.jpg">
+                    </picture>
+                  </div>
                   <div class="team-name">
                     <h3 class="team-header">Mark Guerrero</h3>
                     <p class="team-text">Product Designer</p>
@@ -152,12 +158,18 @@
                 </ul>
             </div>
           <li class="team-foto"> 
-                <img 
-              src="./images/ms.jpg"
-              width="264"
-              height="260"
-              alt="the man smiles"
-              srcset="./images/ms@2x-min.jpg">
+            <div>
+                 <picture>
+                  <source srcset="./images/ms-m-min.jpg 1x, ./images/ms-m@2x-min.jpg 2x" media="(max-width:768px)">
+                  <source srcset="./images/ms-t-min.jpg 1x, ./images/ms-t@2x-min.jpg 2x" media="(max-width:1158px)">
+                    <img 
+                  src="./images/ms.jpg"
+                  width="264"
+                  height="260"
+                  alt="the man smiles"
+                  srcset="./images/ms@2x-min.jpg">
+                 </picture>
+            </div>
             <div class="team-name">
               <h3 class="team-header">Tom Ford</h3>
               <p class="team-text">Frontend Developer</p> 
@@ -193,8 +205,20 @@
                 </ul>
            </div>
           <li class="team-foto">
-              <img src="./images/wp.jpg" width="264" height="260" alt="woman in pink sweater"
-              srcset="./images/wp@2x-min.jpg">
+             <div>
+               <picture>
+                <source
+                srcset="./images/wp-m-min.jpg 1x,
+                ./images/wp-m@2x-min.jpg 2x"
+               media="(max-width:768px)">
+               <source
+               srcset="./images/wp-t-min.jpg 1x,
+                ./images/wp-t@2x-min.jpg 2x"
+                media="(max-width:1158px)">
+                  <img src="./images/wp.jpg" width="264" height="260" alt="woman in pink sweater"
+                  srcset="./images/wp@2x-min.jpg">
+               </picture>
+             </div>
               <div class="team-name">
                 <h3 class="team-header">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -230,12 +254,22 @@
                 </ul>
             </div>
           <li class="team-foto">
-              <img 
-            src="./images/mbs.jpg"
-            width="264"
-            height="260"
-            alt="a man with a beard is smiling"
-            srcset="./images/mbs@2x-min.jpg">
+             <div>
+               <picture>
+                <source srcset="./images/mbs-m-min.jpg 1x,
+                ./images/mbs-m@2x-min.jpg 2x"
+                media="(max-width:768px)">
+                <source srcset="./images/mbs-t-min.jpg 1x,
+                 ./images/mbs-t@2x-min.jpg 2x"
+                 media="(max-width:1158px)">
+                  <img 
+                src="./images/mbs.jpg"
+                width="264"
+                height="260"
+                alt="a man with a beard is smiling"
+                srcset="./images/mbs@2x-min.jpg">
+               </picture>
+             </div>
             <div class="team-name">
               <h3 class="team-header">Daniel Wilson</h3>
               <p class="team-text">UI Designer</p> 
@@ -279,11 +313,19 @@
             <ul class="portfolio-list"> 
               <li class="portfolio-descriotion">
                 <div class="box">
-                  <img src="./images/BankingApp.jpg"
-                  width="360"
-                  height="300"
-                  alt="bank website menu"
-                  srcset="./images/BankingApp@2x-min.jpg">
+                <div>
+                   <picture>
+                    <source media="(max-width: 768px)" srcset="./images/BankingApp-m-min.jpg 1x,
+                    ./images/BankingApp-m@2x-min.jpg 2x">
+                    <source media="(max-width: 1158px)" srcset="./images/BankingApp-t-min.jpg 1x,
+                    ./images/BankingApp-t@2x-min.jpg 2x">
+                      <img src="./images/BankingApp.jpg"
+                      width="360"
+                      height="300"
+                      alt="bank website menu"
+                      srcset="./images/BankingApp@2x-min.jpg">
+                   </picture>
+                </div>
                       <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
                    </div>
                   <div class="apps-description"><h3 class="apps">Banking App</h3>
@@ -291,11 +333,19 @@
               </li>
               <li class="portfolio-descriotion">
                 <div class="box">
-                <img src="./images/CashlessPayment.jpg"
-                width="360"
-                height="300"
-                alt="qr code on the phone"
-                srcset="./images/CashlessPayment@2x-min.jpg">
+               <div>
+                 <picture>
+                  <source media="(max-width: 768px)" srcset="./images/CashlessPayment-m-min.jpg 1x,
+                  ./images/CashlessPayment-m@2x-min.jpg 2x">
+                  <source media="(max-width: 1158px)" srcset="./images/CashlessPayment-t-min.jpg 1x,
+                  ./images/CashlessPayment-t@2x-min.jpg 2x">
+                    <img src="./images/CashlessPayment.jpg"
+                    width="360"
+                    height="300"
+                    alt="qr code on the phone"
+                    srcset="./images/CashlessPayment@2x-min.jpg">
+                 </picture>
+               </div>
                   <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
                </div>
                 <div class="apps-description"><h3 class="apps">Cashless Payment</h3>
@@ -303,11 +353,19 @@
               </li>
               <li class="portfolio-descriotion">
                 <div class="box">
-                <img src="./images/MeditationApp.jpg" 
-                width="360"
-                height="300"
-                alt="laptop and phone"
-                srcset="./images/MeditationApp@2x-min.jpg">
+                <div>
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="./images/MeditationApp-m-min.jpg 1x,
+                    ./images/MeditationApp-m@2x-min.jpg 2x">
+                    <source media="(max-width: 1158px)" srcset="./images/MeditationApp-t-min.jpg 1x,
+                    ./images/MeditationApp-t@2x-min.jpg 2x">
+                    <img src="./images/MeditationApp.jpg" 
+                    width="360"
+                    height="300"
+                    alt="laptop and phone"
+                    srcset="./images/MeditationApp@2x-min.jpg">
+                  </picture>
+                </div>
                   <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
                </div>
                 <div class="apps-description"><h3 class="apps">Meditation App</h3>
@@ -315,11 +373,19 @@
               </li>
               <li class="portfolio-descriotion">
                 <div class="box">
-                <img src="./images/TaxiService.jpg"
-                width="360"
-                height="300"
-                alt="steering wheel"
-                srcset="./images/TaxiService@2x-min.jpg">
+                <div>
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="./images/TaxiService-m-min.jpg 1x,
+                    ./images/TaxiService-m@2x-min.jpg 2x">
+                    <source media="(min-width: 1158px)" srcset="./images/TaxiService-t-min.jpg 1x,
+                    ./images/TaxiService-t@2x-min.jpg 2x">
+                    <img src="./images/TaxiService.jpg"
+                    width="360"
+                    height="300"
+                    alt="steering wheel"
+                    srcset="./images/TaxiService@2x-min.jpg">
+                  </picture>
+                </div>
                   <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
                </div>
                 <div class="apps-description"><h3 class="apps">Taxi Service</h3>
@@ -327,11 +393,19 @@
               </li>
               <li class="portfolio-descriotion">
                 <div class="box">
-                <img src="./images/ScreenIllustrations.jpg" 
-                width="360"
-                height="300"
-                alt="phone screen"
-                srcset="./images/ScreenIllustrations@2x-min.jpg">
+               <div>
+                 <picture>
+                  <source media="(max-width: 768px)" srcset="./images/ScreenIllustrations-m-min.jpg 1x,
+                  ./images/ScreenIllustrations-m@2x-min.jpg 2x">
+                   <source media="(max-width: 1158px)" srcset="./images/ScreenIllustrations-t-min.jpg 1x,
+                  ./images/ScreenIllustrations-t@2x-min.jpg 2x">
+                    <img src="./images/ScreenIllustrations.jpg" 
+                    width="360"
+                    height="300"
+                    alt="phone screen"
+                    srcset="./images/ScreenIllustrations@2x-min.jpg">
+                 </picture>
+               </div>
                   <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
                </div>
                 <div class="apps-description"><h3 class="apps">Screen Illustrations</h3>
@@ -339,11 +413,19 @@
               </li>
               <li class="portfolio-descriotion">
                 <div class="box">
-                <img src="./images/OnlineCourses.jpg"
-                width="360"
-                height="300"
-                alt="woman in orange"
-                srcset="./images/OnlineCourses@2x-min.jpg">
+                <div>
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="./images/OnlineCourses-m-min.jpg 1x,
+                    ./images/OnlineCourses-m@2x-min 2x">
+                    <source media="(max-width: 1158px)" srcset="./images/OnlineCourses-t-min.jpg 1x,
+                    ./images/OnlineCourses-t@2x-min 2x">
+                    <img src="./images/OnlineCourses.jpg"
+                    width="360"
+                    height="300"
+                    alt="woman in orange"
+                    srcset="./images/OnlineCourses@2x-min.jpg">
+                  </picture>
+                </div>
                   <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
                </div>
                 <div class="apps-description"><h3 class="apps">Online Courses</h3>
@@ -410,7 +492,7 @@
        </div>
       </div>
   </footer>
-  <div class="hiden-backdrop" >
+  <div class="hiden-backdrop is-open" >
      <div class="form-container"> 
        <button class="content-close" type="button" >
               <svg class="icon-close" width="8" height="8">
@@ -472,7 +554,7 @@
       </form>
      </div>
   </div>
-    <div class="container-mobile-menu">
+    <div class="container-mobile-menu " >
       <div class="mobile-navigation"> 
         <button class="button-close" type="button">
           <svg class="mobile-navigation-icon" width="8" height="8">
