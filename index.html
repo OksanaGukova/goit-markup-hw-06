@@ -28,7 +28,7 @@
           <li><a href="" class="nav-text">Contacts</a></li>
         </ul>
       </nav>
-        <button class="mobile-menu-open" type="button">
+        <button class="mobile-menu-open" type="button" >
           <svg
             class="mobile-menu-icon"
             width="24"
@@ -52,7 +52,7 @@
        <section class="dark-bg">
         <div class="container">
         <h1 class="darc-bg-txt" >Effective Solutions for Your Business</h1>
-        <button class="main-button" type="button" >Order Service</button>
+        <button class="main-button" type="button" data-modal-open >Order Service</button>
         </div>
        </section>
          <section class="our-capabilities">
@@ -492,9 +492,9 @@
        </div>
       </div>
   </footer>
-  <div class="hiden-backdrop is-open">
+  <div class="hiden-backdrop is-open"  data-modal>
      <div class="form-container"> 
-       <button class="content-close" type="button" >
+       <button class="content-close" type="button" data-modal-close>
               <svg class="icon-close" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
               </svg>
@@ -611,6 +611,7 @@
                   </ul>
           </div>
 </div>
+<script src="./js/modal.js"></script>
   </body>
 </html>
 

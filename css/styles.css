@@ -1212,7 +1212,7 @@ visibility: hidden;
 pointer-events: none;
 }
 
-.is-open{
+.is-hidden{
   visibility: visible;
   opacity: 1;
  pointer-events: auto;
